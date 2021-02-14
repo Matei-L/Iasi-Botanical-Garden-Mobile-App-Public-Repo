@@ -1,0 +1,66 @@
+<resources>
+
+    <style name="NoActionBarTheme" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="android:colorPrimary">@color/color_primary</item>
+        <item name="android:colorPrimaryDark">@color/color_primary_dark</item>
+
+        <item name="colorSecondary">@color/color_secondary</item>
+        <item name="colorControlActivated">@color/color_primary</item>
+
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="ExpandToggleButtonTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:buttonStyleToggle">@style/ExpandToggleButtonStyle</item>
+        <item name="android:textOn" />
+        <item name="android:textOff" />
+        <item name="android:text" />
+    </style>
+
+    <style name="ExpandToggleButtonStyle" parent="android:Widget.Material.Button.Toggle">
+        <item name="android:background">@drawable/ic_expand_toggle_bg</item>
+        <item name="android:backgroundTint">@color/color_primary</item>
+        <item name="android:disabledAlpha">?android:attr/disabledAlpha</item>
+        <item name="android:textOn" />
+        <item name="android:textOff" />
+        <item name="android:text" />
+    </style>
+
+    <style name="NavigationView">
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="NavigationTabTextAppeareance" parent="Widget.MaterialComponents.TabLayout">
+        <item name="android:textSize">16sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="PopupMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:itemTextAppearance">@style/PopupMenuTextAppeareance</item>
+    </style>
+
+    <style name="PopupMenuTextAppeareance" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:textSize">16sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="FloatingActionButtonMenuLabel">
+        <item name="android:textColor">@color/color_secondary</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:background">@drawable/floating_action_menu_label_bg</item>
+    </style>
+
+</resources>

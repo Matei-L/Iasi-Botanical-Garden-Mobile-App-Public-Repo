@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main_activity"
+    app:startDestination="@+id/navigation_qr">
+
+    <fragment
+        android:id="@+id/navigation_qr"
+        android:name="com.botanical_garden_iasi.botanical_garden_app.ui.main.qr.QRScannerFragment"
+        tools:layout="@layout/qr_scanner_fragment">
+        <action
+            android:id="@+id/action_navigation_qr_to_navigation_plant_info_activity"
+            app:destination="@id/navigation_plant_info_activity" />
+        <action
+            android:id="@+id/action_navigation_qr_to_navigation_plants_list"
+            app:destination="@id/navigation_plants_list" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_plants_list"
+        android:name="com.botanical_garden_iasi.botanical_garden_app.ui.main.plants.plants_list_fragment.PlantsListFragment"
+        tools:layout="@layout/vertical_list_fragment">
+        <action
+            android:id="@+id/action_navigation_plants_list_to_navigation_plant_info_activity"
+            app:destination="@id/navigation_plant_info_activity" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_maps"
+        android:name="com.botanical_garden_iasi.botanical_garden_app.ui.main.maps.MapsFragment"
+        android:label="main_maps_fragment"
+        tools:layout="@layout/maps_fragment" >
+        <argument
+            android:name="sectionId"
+            android:defaultValue="-1"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_navigation_maps_to_navigation_plants_list"
+            app:destination="@id/navigation_plants_list" />
+    </fragment>
+
+    <activity
+        android:id="@+id/navigation_plant_info_activity"
+        android:name="com.botanical_garden_iasi.botanical_garden_app.ui.main.plants.plant_info_activity.PlantInfoActivity"
+        android:label="plant_info_activity"
+        tools:layout="@layout/plant_info_activity">
+        <argument
+            android:name="plantId"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </activity>
+    <activity
+        android:id="@+id/navigation_settings_activity"
+        android:name="com.botanical_garden_iasi.botanical_garden_app.ui.settings.SettingsActivity"
+        android:label="settings_activity"
+        tools:layout="@layout/settings_activity" />
+    <action
+        android:id="@+id/action_global_navigation_maps"
+        app:destination="@id/navigation_maps" />
+</navigation>

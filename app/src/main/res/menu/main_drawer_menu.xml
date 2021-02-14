@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/home_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_qr"
+            android:icon="@drawable/ic_qr"
+            android:title="@string/qr_title" />
+        <item
+            android:id="@+id/navigation_plants_list"
+            android:icon="@drawable/ic_plant"
+            android:title="@string/plants_title" />
+        <item
+            android:id="@+id/navigation_maps"
+            android:icon="@drawable/ic_map"
+            android:title="@string/maps_title" />
+    </group>
+    <item android:title="@string/games_title">
+        <menu>
+            <group
+                android:id="@+id/games_group"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/navigation_games_activity"
+                    android:icon="@drawable/ic_games"
+                    android:title="@string/game_one_title" />
+            </group>
+        </menu>
+    </item>
+
+    <group
+        android:id="@+id/settings_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_settings_activity"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/settings_title" />
+    </group>
+
+</menu>

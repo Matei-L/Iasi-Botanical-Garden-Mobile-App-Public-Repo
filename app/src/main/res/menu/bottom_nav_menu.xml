@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_qr"
+        android:icon="@drawable/ic_qr"
+        android:title="@string/qr_title" />
+
+    <item
+        android:id="@+id/navigation_plants_list"
+        android:icon="@drawable/ic_plant"
+        android:title="@string/plants_title" />
+    <item
+        android:id="@+id/navigation_maps"
+        android:icon="@drawable/ic_map"
+        android:title="@string/maps_title" />
+
+</menu>
